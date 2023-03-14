@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    1.section (કોઈપણ પેજ 3 ભાગમાં હોય છે intro,content,contact) આ સેલ્ફ contain કંટૈંટ ધરાવતા નથી
+    -->
+    <div>
+        <section>
+            <h2>mozila firefox</h2>
+            <p>this is the best for all</p>
+        </section>
+        <section>
+            <h2>mozila history</h2>
+            <p>this is found in 1987</p>
+        </section>
+    </div>
+
+    <!-- 
+        2.article (આ સેલ્ફ contain કંટૈંટ ધરાવે છે અને બીજા થી ઇંડિપેંડેંટ છે)
+     -->
+    <div>
+        <article>
+            <h2>mozila firefox</h2>
+            <p>the mozila firefox is best browser</p>
+        </article>
+        <article>
+            <h2>google chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008.</p>
+        </article>
+    </div>
+
+    <!-- 
+        3.header (introduction પાર્ટનું કંટેનર માનવામાં આવે છે અથવા નેવિગેશન લિંકનો સેટ તે નીચે મુજબ ધરાવે છે આ એલિમેંટ ને તમે બીજા કોઈ એલિમેંટ ની જગ્યાએ રાખી શકતા નથી (જેમકે footer ,address): 1.heading એલિમેંટ (h1-h6) 2.logo or icon  3.authorship information)
+     -->
+    <div>
+        <header>
+            <h1>firefox</h1>
+            <p>About Firefox</p>
+        </header>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem?
+        </p>
+    </div>
+
+    <!-- 
+        4.footer (A <footer> element typically contains:
+
+                      authorship information
+                      copyright information
+                      contact information
+                      sitemap
+                      back to top links
+                      related documents)
+     -->
+     <div>
+        <footer>
+            <p>author:ashok</p>
+            <p><a href="mailto:baldaniyaashok153@gmail.com">mail to author</a></p>
+        </footer>
+     </div>
+
+     <!-- 
+        5.Nav (contain set of navigation links)
+      -->
+      <div>
+        <nav>
+            <a href="https://www.flipkart.com">Flipkart</a>
+            <a href="https://www.amazon.com">Amazon</a>
+        </nav>
+      </div>
+
+      <!-- 
+        6.Aside (for extra information about any word in paragraph)
+       -->
+       <div>
+        <p>yesterday i visited statue of unity with my family</p>
+        <aside>
+            <h3>about statue of unity</h3>
+            <p>the statue of unity is worlds tallest statue</p>
+        </aside>
+       </div>
+
+       <!--  
+        7.Figure and Figcaption
+        (figure display self contain content like.illustration ,diagram ,photos  Figcaption:use as a caption for figure and placed as first or last child of figure element)
+        -->
+        <div>
+            <figure>
+                <img src="automotive.png" alt="" style="width: 150px;">
+                <figcaption>Fig. 1 </figcaption>
+            </figure>
+        </div>
+
+        <!-- 
+            8.detail
+            ( specifies additional details that the user can open and close on demand)
+         -->
+         <div>
+            <details>
+                <summary>firefox</summary>
+                <p>this is the best web browser</p>
+            </details>
+         </div>
+
+         <!-- 
+            9.summary
+            (use as first child of detail element to describe heading)
+          -->
+
+          <!-- 
+            10.time
+            (define specific time(date and time)
+            datetime:use to translate time into machine readable format)
+           -->
+           <div>
+            <p>i have a time between <time datetime="2008-04-14 20:00">10:00</time> to <time>12:00</time> </p>
+           </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .left{
+            background-color: antiquewhite;
+            width: 20%;
+            padding: 20px;
+            float: left;
+        }
+        .main{
+            background-color: aquamarine;
+            width: 60%;
+            padding: 20px;
+            float: left;
+        }
+        .right{
+            background-color: azure;
+            width: 20%;
+            padding: 20px;
+            float: left;
+        }
+        @media screen and (max-width:800px){
+            .left,.main,.right{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <p>hello left</p>
+    </div>
+    <div class="main">
+        <p>hello main</p>
+    </div>
+    <div class="right">
+        <p>hello right</p>
+    </div>
+</body>
+</html>

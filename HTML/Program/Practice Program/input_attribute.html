@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!-- 
+        1.size
+        નોટ: આ ફક્ત બોક્સની સાઇઝ નક્કી કરે છે નહીં કે લેટર. 
+
+        (size attribute specifies the visible width, in characters, of an input field. 
+        
+        The default value for size is 20.
+
+        Note: The size attribute works with the following input types: text, search, tel, url, email, and password.)
+     -->
+     <label for="nm">name</label>
+     <input type="text" name="name" id="nm" size="15">
+     <label for="pn">pin</label>
+     <input type="text" name="pin" id="pn" size="25"> <br><br>
+
+
+     <!-- 
+        2.multiple
+            specifies that the user is allowed to enter more than one value in an input field.
+            works with the following input types: email, and file.
+      -->
+      <label for="fl">select file</label>
+      <input type="file" name="file" id="fl" multiple>
+      <label for="ml">enter email</label>
+      <input type="email" name="emal" id="ml" multiple>
+      <input type="submit">   <br><br>
+
+
+      <!-- 
+        3.placeholder
+          (a sample value or a short description. The short hint is displayed in the input field before the user enters a value.)
+       -->
+       <label for="nm">Name</label>
+       <input type="text" name="name" id="nm" placeholder="enter name here"> <br><br>
+
+
+       <!-- 
+        4.required
+           (input field must be filled out before submitting the form.)
+        -->
+        <label for="ps">enter password</label>
+        <input type="password" name="pass" id="ps" required> <br><br>
+
+
+        <!-- 
+            5.autofocus
+             (input field should automatically get focus when the page loads.સાઇટ ખૂલતાં જ કર્સર ત્યાં જતું રે છે અને બોલ્ડ થાય છે)
+         -->
+         <label for="af">auto focus</label>
+         <input type="text" name="auto" id="af" autofocus>
+    </form>
+</body>
+</html>

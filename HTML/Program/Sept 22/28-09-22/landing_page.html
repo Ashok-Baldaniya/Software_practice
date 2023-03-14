@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .main {
+            background-image: url(pexels-david-besh-884788.jpg);
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.301);
+            background-blend-mode: overlay;
+        }
+
+        .navbar {
+            margin: 0 auto;
+            padding: 10px 0;
+            /* background-color: bisque; */
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            display: flex;
+        }
+
+        .navbar h2 {
+            font-size: 33px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: orange;
+        }
+
+        .navbar ul {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style: none;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .search {
+            display: flex;
+            border: 2px solid rgb(255, 68, 0);
+            border-radius: 4px;
+        }
+
+        .search input {
+            background-color: transparent;
+            border: none;
+            padding: 4px 10px;
+            color: white;
+        }
+
+        .btn1{
+            padding: 4px 12px;
+            background-color: orangered;
+            font-size: 14px;
+            color: white;
+            border: none;
+        }
+
+        .des {
+            height: calc(100vh - 64px);
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .left {
+            /* background-color: aquamarine; */
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 10px;
+        }
+
+        .left h2 {
+            width: 60%;
+            font-size: 45px;
+            letter-spacing: 1.6px;
+        }
+
+        .left span{
+            font-size: 50px;
+            color: rgb(255, 98, 0);
+        }
+
+        .left p{
+            width: 80%;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .btn2{
+            padding: 7px 42px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(255, 85, 0);
+            margin-left: 10px;
+            letter-spacing: 1px;
+            color: black;
+        }
+
+        .right{
+            width: 35%;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 12px;
+            align-items: center;
+            background-color:rgba(0, 0, 0, 0.733);
+            width: 70%;
+            padding: 24px 0;
+            margin-left: 80px;
+            margin-top: 80px;
+            height: 70%;
+        }
+
+        .btn3{
+            padding: 5px 22px;
+            width: 75%;
+            background-color: white;
+            color: rgb(255, 77, 0);
+            font-size: 18px;
+            border-radius: 12px;
+            border: none;
+            letter-spacing: 1.2px;
+        }
+
+        .box input{
+            border: none;
+            border-bottom: 2px solid orangered;
+            width: 85%;
+            padding: 6px 5px;
+            background-color: transparent;
+        }
+
+        .btn4{
+            cursor: pointer;
+            padding: 7px 32px;
+            width: 75%;
+            background-color: orangered;
+            color: black;
+            font-size: 18px;
+            border-radius: 12px;
+            border: none;
+            letter-spacing: 1.2px;
+        }
+
+        .box p{
+            width: 80%;
+            text-align: center;
+        }
+
+        .box span{
+            cursor: pointer;
+            color: red;
+        }
+
+        .box ul{
+            cursor: pointer;
+            display: flex;
+            list-style: none;
+            /* justify-content: space-between; */
+            gap: 18px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <h2>praroz</h2>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>service</li>
+                <li>design</li>
+                <li>contact</li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Type to search"/>
+                <button class="btn1">search</button>
+            </div>
+        </div>
+        <div class="des">
+            <div class="left">
+                <h2>web design & <span>development</span> course</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequatur nulla eum iure praesentium.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit amet velit deserunt iure
+                    praesentium.
+                </p>
+                <button class="btn2">join us</button>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <button class="btn3">login here</button>
+                    <input type="text" name="" id="" placeholder="enter email here">
+                    <input type="text" name="" id="" placeholder="enter password here">
+                    <button class="btn4">login</button>
+                    <p>dont have an account <br><span>sign up </span>here</p>
+                    <p>login with</p>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-google"></i></li>
+                        <li><i class="fa-brands fa-skype"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

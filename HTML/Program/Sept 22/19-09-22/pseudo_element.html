@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- there are 5 type of element
+        1.after
+        2.before
+        3.first line
+        4.first letter
+        5.selection -->
+
+        <style>
+            h1::after{
+                content: " Ashok";
+                color: blue;
+            }
+
+            h1::before{
+                content: "Ashok ";
+                color: blue;
+            }
+
+            p::first-line{
+                color: slateblue;
+            }
+
+            p::first-letter{
+                color: red;
+                font-size: 80px;
+            }
+
+            p::selection{
+                background-color: blanchedalmond;
+                color: black;
+            }
+        </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem unde pariatur iusto sunt eligendi incidunt minima rerum temporibus omnis, error quis aspernatur optio dolores saepe aliquid architecto sequi voluptates! Beatae.</p>
+</body>
+</html>

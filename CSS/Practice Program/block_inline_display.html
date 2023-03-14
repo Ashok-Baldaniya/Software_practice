@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        display:inline -> is default property.અહી હાઇટ કે વિડ્થ લાગુ પડતી નથી એજ લાઇન માં કંટૈંટ મુજબ બ્લોક બને છે. 
+
+        display:block -> અહી હાઇટ અને વિડ્થ આપી શકાય છે તથા બ્લોક ફૂલ વિડ્થ રોકીને ત્યારપછીના કંટૈંટ ને ન્યુ લાઇન માં મોકલે છે. 
+
+        display:inline-block -> અહી હાઇટ અને વિડ્થ આપી શકાય છે તથા બ્લોક વેલ્યુ મુજબ વિડ્થ અને હાઇટ રોકે છે અને next line ને new line માં મોકલે  છે 
+     -->
+    <style>
+        .a{
+            background-color: yellow;
+            display: inline;
+            height: 100px;
+            width: 100px;
+        }
+        .b{
+            background-color: yellow;
+            display: block;
+            height: 100px;
+            width: 100px;
+        }
+        .c{
+            background-color: yellow;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet. <span class="a">hello</span><span class="a">hello</span>Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, porro.</div>
+    <div>Lorem ipsum dolor sit amet. <span class="b">hello</span><span class="b">hello</span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, velit!</div>
+    <div>Lorem ipsum dolor sit amet. <span class="c">hello</span><span class="c">hello</span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque et ducimus veniam itaque voluptates tempora amet, id possimus, cum vitae modi. Fugiat reiciendis beatae voluptatum rerum ipsa est. Nemo, voluptatum?</div>
+</body>
+</html>

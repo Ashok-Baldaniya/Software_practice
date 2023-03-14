@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        allows you to define special rules for different languages.
+        defines the quotation marks.
+     -->
+    <style>
+        q:lang(hi){
+            quotes: "?" "?";
+        }
+        p:lang(ok){
+            border: 2px dotted blue;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <p lang="ok">Lorem ipsum  <q lang="hi"> Lorem ipsum dolor sit. </q>  dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>

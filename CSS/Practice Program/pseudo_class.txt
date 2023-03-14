@@ -1,0 +1,9 @@
+The syntax of pseudo-classes:
+    
+selector:pseudo-class { 
+    property: value;
+}
+
+a:link {
+  color: red;
+}

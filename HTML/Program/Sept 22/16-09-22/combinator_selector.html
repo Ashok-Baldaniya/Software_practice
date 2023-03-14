@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* There are 4 types of combinator selector
+           1.descendent selector(_space)
+           2.direct child(>)
+           3.general sibling(~)
+           4.adjacent sibling(+) તરત પછી જે ટેગ આપી હોય એ આવે તોજ વર્ક કરે નહિતર ના કરે. */
+
+        /* 1.descendent selector */
+        section p{
+            background-color: blanchedalmond;
+        }
+
+        /* 2.direct child */
+        div>p{
+            color: blue;
+            background-color: antiquewhite;
+        }
+
+        div>h2{
+            color: blueviolet;
+        }
+
+        /* 3.general sibling */
+        h1~p{
+            color: red;
+        }
+
+        /* 4.adjacent sibling */
+        h1+p{
+            background-color: turquoise;
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere minus cumque itaque nam consequuntur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, distinctio cumque.</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora debitis, mollitia dolor fugit odio unde.</p>
+        </section>
+        <h2>world</h2>
+    </div>
+</body>
+</html>

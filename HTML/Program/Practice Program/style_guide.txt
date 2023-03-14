@@ -1,0 +1,20 @@
+1.always use alt,width and height for img (because the browser can reserve space for the image before loading.)
+
+2.use lowercase in all html coding
+
+3.use quotes attribute values(Quoted values are easier to read,
+You MUST use quotes if the value contains spaces)
+
+4.avoid long code line (it is NOT convenient to scroll right and left to read the HTML code.)
+
+5.never skip <title> element (The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine)
+
+6.use html,head,body tag always (Omitting <body> can produce errors in older browsers. Omitting <html> and <body> can also crash DOM and XML software.)
+
+7.close empty HTML element (it is optional to close empty elements.,XML/XHTML software to access your page, keep the closing slash (/), because it is required in XML and XHTML.)
+
+8.add the lang attribute (to declare the language of the Web page. This is meant to assist search engines and browsers.)
+
+9.setting the viewport (The viewport is the user's visible area of a web page. It varies with the device
+width=device-width part sets the width of the page to follow the screen-width of the device
+initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.)

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        To define a pre-selected option, add the "selected" attribute to the option.
+        અહી જે ઓપ્શન માં સેલેક્ટેડ કરશું એ ઓપ્શન સિલેક્ટ રહેશે. 
+
+        Use the size attribute to specify the number of visible values.
+        size="2" આપતા આઉટપુટ માં 2 city બતાવે છે અને બાકીની સ્ક્રોલ થાય છે. 
+
+        Use the multiple attribute to allow the user to select more than one value ,અહી તમે ctrl કી વડે એક કરતાં વધારે ઓપ્શન સિલેક્ટ કરી સબમિટ કરી શકો છો.
+     -->
+</head>
+<body>
+<form action="">
+    <label for="1">Choose City:</label>
+    <select name="cars" id="1" size="2" multiple>
+        <option value="Vapi">Vapi</option>
+        <option value="Baroda">Baroda</option>
+        <option value="surat" selected>surat</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Bharuch">Bharuch</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

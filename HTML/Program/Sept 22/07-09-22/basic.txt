@@ -1,0 +1,31 @@
+HTML-Hyper text markup language
+URL-Uniform Resource Locator
+
+Protocol-http/https
+WWW.
+Domain  name-flipkart,amazon,netflix
+Top domain name-.com,.in
+
+url = https://www.flipkart.com
+
+HTML Structure:
+<!DOCTYPE html>
+<head>
+     <title> Document </title>
+</head>
+<body>
+       //code
+</body>
+</html>
+
+Types of Tag:
+1.Opening <html>
+2.Closing </html>
+3.Self closing tag (<hr>,<br>)
+
+HTML element:
+<p> content </p>
+<opening tag> content <closing tag>
+
+Comment:
+<!--    -->

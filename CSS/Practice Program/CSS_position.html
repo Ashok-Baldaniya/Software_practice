@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        1.static(default)
+        2.relative
+        3.absolute
+        4.fixed
+        5.stickey
+     -->
+    <style>
+        .main{
+            background-color: bisque;
+            height: 1600px;
+            width: 1700px;
+            border: 2px solid black;
+        }
+        .box{
+            border: 1px solid red;
+            height: 150px;
+            width: 250px;
+            margin: 2px;
+            display: inline-block;
+            background-color: cornsilk;
+        }
+        #box2{
+
+            /* this is default position of yoou dont give any position then default property automatically apply itself. */
+            /* position: static; */
+
+            /* relative to its "normal" position it will be give space 
+            અહી તેની નોર્મલ પોજિશન ની સાપેક્ષે ટોપમાં 30 px અને લેફ્ટમાં 30 px છોડશે. */
+            /* position: relative;
+            top: 30px;
+            left: 30px; */
+
+           /* relative to its "parent" (here main) position it will give a space 30px from tp and left side (Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.)*/
+            /* position: absolute;
+            top: 30px;
+            left: 30px;  */
+            
+            /* relative to its "browser" window it will give a space 30px from right and 200px from top side (it will not take space in background) */
+            position: fixed;
+            right: 30px;
+            top: 200px;
+
+            /* (it will take space in background at its normal position) it is mandatory to give margin*/
+            /* position: sticky; */
+            /* top: 50px; */
+        } 
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        The <script> element uses display: none; as default. 
+     -->
+    <style>
+        li{
+            display: inline;
+        }
+        span{
+            display: block;
+        }
+        .none{
+            /* this not take space in output */
+            display: none;
+        }
+        .hidden{
+            /* this take up space in output */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+    <span>Lorem ipsum dolor sit amet.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span><span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+
+    <p class="none">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+
+    <p class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+</body>
+</html>

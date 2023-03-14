@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        Note: z-index only works on positioned elements (position: absolute, relative, fixed, or sticky) and flex items (elements that are direct children of display: flex elements)
+
+        જેનો  ઇંડેક્સ વધારે એ ઓબ્જેક્ટ ઉપર દેખાય છે અને ઇંડેક્સ ઓછો એમ ઓબ્જેક્ટ બીજા ઓબ્જેક્ટ ની પાછળ જે છે 
+
+        જો index વગર position આપવામાં આવે તો છેલ્લે કરેલો કોડ ઉપર આવે છે  
+     -->
+    <style>
+        img{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+
+        .container{
+            position: relative;
+        }
+        .black{
+            position: relative;
+            height: 150px;
+            margin: 30px;
+            border: 1px solid black;
+            z-index: 1;
+        }
+        .gray{
+            position: absolute;
+            background-color: lightgray;
+            top: 60px;
+            left: 90px;
+            border: 1px solid gray;
+            height: 100px;
+            width: 70%;
+            z-index: 2;
+        }
+        .green{
+            position: absolute;
+            background-color: lightgreen;
+            top: -10px;
+            left: 700px;
+            height: 100px;
+            z-index: 3;
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    <img src="images.jfif">
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container">
+        <div class="black">black</div>
+        <div class="gray">gray</div>
+        <div class="green">green</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        એવા પેરેન્ટ કે જેના ફર્સ્ટ ચાઇલ્ડ તરીકે p હોય એમાંના બધાજ i. OR
+        એવા બધાજ i કે જે પેરેન્ટ ના ફર્સ્ટ ચાઇલ્ડ તરીકે p હોય.
+        matches all <i> elements in <p> elements that are the first child of another element(parent).
+     -->
+    <style>
+        p:first-child i{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor<i>ok</i> amet consectetur <i>ok</i> adipisicing elit.</p>
+        <p>Lorem ipsum dolor<i>ok</i> amet consectetur <i>ok</i> adipisicing elit.</p>
+    </div>
+    <p>Lorem ipsum dolor<i>ok</i> amet consectetur <i>ok</i> adipisicing elit.</p>
+    <p>Lorem ipsum dolor<i>ok</i> amet consectetur adipisicing elit.</p>
+    <div>
+        <p>Lorem ipsum dolor<i>ok</i> amet consectetur <i>ok</i> adipisicing elit.</p>
+        <p>Lorem ipsum dolor<i>ok</i> amet consectetur adipisicing elit.</p>
+    </div>
+    <p>Lorem ipsum dolor<i>ok</i> amet consectetur <i>ok</i> adipisicing elit.</p>
+</body>
+</html>

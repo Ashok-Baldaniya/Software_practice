@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        specifies how the form-data should be encoded when submitted (only for forms with method="post").
+        The first sends the form-data with default encoding, the second sends the form-data encoded as "multipart/form-data".
+     -->
+</head>
+<body>
+    <form action="https://www.flipkart.com" method="post">
+        <label for="fname">first name</label>
+        <input type="text" name="first name" id="fname">
+        <input type="submit" value="submit">
+        <input type="submit" value="submit as" formenctype="multipart/form-data">
+    </form>
+</body>
+</html>

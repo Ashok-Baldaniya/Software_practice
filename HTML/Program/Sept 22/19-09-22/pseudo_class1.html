@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- nth-child(5)
+         માનો કે 5 પેરેગ્રાફ છે અને એમાંથી કોઈ એકને તમે સ્ટાઇલ આપવા માંગો છો ત્યારે body ના જે પેરેગ્રાફ ને સ્ટાઇલ આપવી હોય તેનો sr no કાઉસ માં આપવો પડસે ex. (5) -->
+         
+         <!-- style આપતી વખતે ધ્યાન માં રાખવું ક div અને : વચ્ચે સ્પેસ રહે -->
+
+         <style>
+            div :nth-child(2){
+                color: red;
+            }
+
+            /* છેલ્લેથી કેટલામો પેરેગ્રાફ એ બતાવે છે   */
+            div :nth-last-child(2){ 
+                color: blue;
+            }
+
+            div :first-child{
+                color: blueviolet;
+            }
+
+            div :last-child{
+                color: chocolate;
+            }
+
+         </style>
+</head>
+<body>
+    <div>
+    <h1>hello</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem.</p>
+    <h2>world</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Note: The overflow property only works for block elements with a specified height.
+
+        visible : default overflow
+
+        hidden : he overflow is clipped,and the rest of the content  is      hidden
+
+        scroll : Note that this will add a scrollbar both horizontally and vertically (even if you do not need it)
+
+        auto : The auto value is similar to scroll, but it adds scrollbars only when necessary.
+
+        overflow-x: specifies what to do with the left/right edges of the content.
+
+        overflow-y: specifies what to do with the top/bottom edges of the content.
+         */
+
+        .visible{
+            height: 100px;
+            width: 200px;
+            background-color: bisque;
+            /* overflow: visible; */
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            overflow-x: scroll;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="visible">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis esse possimus debitis ipsa eligendi velit, praesentium cupiditate tenetur quo ab. Expedita quasi ad alias, repellat officia in culpa reprehenderit necessitatibus.
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        to hold some content that will be hidden when the page loads.
+     -->
+</head>
+<body>
+    <button onclick="showContent()">Show hidden content</button>
+    <template>
+        <h2>scooter</h2>
+        <img src="automotive.png" alt="image" height="200px" width="300px">
+    </template>
+    <script>
+        function showContent() {
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+        }
+        </script
+</body>
+</html>
